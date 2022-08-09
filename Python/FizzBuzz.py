@@ -1,3 +1,4 @@
+# Problem 412
 # Given an integer n, return a string array answer (1-indexed) where:
 #   answer[i] == "FizzBuzz" if i is divisible by 3 and 5.
 #   answer[i] == "Fizz" if i is divisible by 3.
@@ -7,11 +8,8 @@
 # Constraints:
 # 1 <= n <= 104
 
-import sys
-
-
 class Solution:
-    def fizzBuzz(n: int):
+    def fizzBuzz(self, n: int):
 
         fizzBuzz_maps = {3: "Fizz",
                          5: "Buzz"}
@@ -31,7 +29,3 @@ class Solution:
             return_list.append(current_string)
 
         return return_list
-
-
-if __name__ == "__main__":
-    print(Solution.fizzBuzz(int(sys.argv[1])))
